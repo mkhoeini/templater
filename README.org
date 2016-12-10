@@ -1,0 +1,5 @@
+#+TITLE: Templater
+
+* Idea
+It seems that ~lein new~ doesn't have the right granularity. Instead it seems that each template is actually an aspect that can be added to a project. So I'd like to see a solution which would act on an already existing project by allowing inteligent, interactive addition of an aspect to a project. For example, I have a ring application, and then I decide to add liberator. So I do ~lein add liberator~ and other than the dependency, it creates some pathes for liberator resources and add them to the source path. Likewise, I run ~lein add cljs~ and it configures clojurescript deps and compilation and source pathes, etc.
+Ideally, I'd like a situation that I can effectively run ~lein add liberator/add-resource user~ and it does all the right things. We are doing functional programming. So I expect that our tools are a little more composable than other people's.
